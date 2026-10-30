@@ -1,0 +1,1937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Invest in Luxury Dubai Real Estate from Europe. 0% Income Tax, 10-Year Golden Visa Eligibility, and High Rental Returns directly from premier developers.">
+  <title>Luxury Dubai Real Estate | Exclusive European Investor Gateway</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --gold-primary: #d4af37;
+      --gold-light: #f7e089;
+      --gold-dark: #aa820a;
+      --dark-obsidian: #080b11;
+      --dark-card: #0d121c;
+    }
+
+    body {
+      background-color: var(--dark-obsidian);
+      color: #f1f5f9;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .lang-bn { font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif; }
+    .lang-hi { font-family: 'Noto Sans Devanagari', 'Plus Jakarta Sans', sans-serif; }
+    .font-cinzel { font-family: 'Cinzel', serif; }
+
+    /* Luxury Gold Gradients */
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #fff2be 0%, #d4af37 50%, #aa820a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-border {
+      border: 1px solid rgba(212, 175, 55, 0.35);
+    }
+    .gold-btn {
+      background: linear-gradient(135deg, #e8c85c 0%, #d4af37 50%, #b28a15 100%);
+      color: #080b11;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+    .gold-btn:hover {
+      box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.45);
+      transform: translateY(-2px);
+    }
+
+    .hero-glow {
+      background: radial-gradient(circle at 60% 30%, rgba(212, 175, 55, 0.15) 0%, rgba(8, 11, 17, 0) 70%);
+    }
+
+    .luxury-card {
+      background: rgba(13, 18, 28, 0.75);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .luxury-card:hover {
+      border-color: rgba(212, 175, 55, 0.45);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.15);
+    }
+  </style>
+</head>
+<body class="selection:bg-amber-400 selection:text-black">
+
+  <!-- ================= TOP LUXURY VIP BAR (LANGUAGE + CURRENCY) ================= -->
+  <div class="bg-black/90 border-b border-amber-500/20 py-2.5 px-4 text-xs">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
+      
+      <!-- Trust Points -->
+      <div class="flex items-center gap-4 text-slate-300">
+        <span class="flex items-center gap-1.5 text-amber-400 font-semibold" data-i18n="top_visa">
+          <i class="fa-solid fa-passport"></i> 10-Year UAE Golden Visa Eligible
+        </span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="hidden md:flex items-center gap-1.5 text-slate-300" data-i18n="top_tax">
+          <i class="fa-solid fa-percent text-amber-400"></i> 0% Property & Rental Income Tax
+        </span>
+      </div>
+
+      <!-- Controls: Currency & Language -->
+      <div class="flex flex-wrap items-center gap-4">
+        
+        <!-- Language Switcher (EN default, Bengali, Hindi) -->
+        <div class="flex items-center gap-1.5">
+          <span class="text-slate-400 text-[11px] uppercase font-bold tracking-wider"><i class="fa-solid fa-globe text-amber-400"></i></span>
+          <div class="flex bg-slate-900 border border-white/20 rounded-lg p-0.5 text-[11px] font-bold">
+            <button onclick="setLanguage('en')" id="lang-en" class="px-2.5 py-0.5 rounded bg-amber-400 text-slate-950 transition font-bold">English</button>
+            <button onclick="setLanguage('bn')" id="lang-bn" class="px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition">বাংলা</button>
+            <button onclick="setLanguage('hi')" id="lang-hi" class="px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition">हिन्दी</button>
+          </div>
+        </div>
+
+        <!-- Currency Switcher -->
+        <div class="flex items-center gap-1.5">
+          <div class="flex bg-slate-900 border border-amber-500/30 rounded-lg p-0.5 text-[11px] font-bold">
+            <button onclick="setCurrency('EUR')" id="curr-EUR" class="px-2.5 py-0.5 rounded bg-amber-400 text-slate-950 transition">EUR (€)</button>
+            <button onclick="setCurrency('USD')" id="curr-USD" class="px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition">USD ($)</button>
+            <button onclick="setCurrency('AED')" id="curr-AED" class="px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition">AED (د.إ)</button>
+            <button onclick="setCurrency('PLN')" id="curr-PLN" class="px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition">PLN (zł)</button>
+          </div>
+        </div>
+
+        <!-- Admin Control Trigger -->
+        <button onclick="openAdminModal()" title="Open Admin Panel" class="text-slate-400 hover:text-amber-400 text-xs px-2 py-1 rounded bg-white/5 border border-white/10 transition">
+          <i class="fa-solid fa-sliders"></i>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= LUXURY HEADER / NAVBAR ================= -->
+  <header class="sticky top-0 z-40 bg-[#080b11]/90 backdrop-blur-xl border-b border-white/10 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex flex-col">
+        <span class="font-cinzel text-xl sm:text-2xl font-black tracking-[0.2em] gold-gradient-text">
+          BERIGHT PROPERTIES
+        </span>
+        <span class="text-[9px] uppercase tracking-[0.3em] text-slate-400 font-semibold -mt-1" data-i18n="brand_subtitle">
+          Dubai Premier Residences
+        </span>
+      </a>
+
+      <!-- Direct VIP Connect & Actions -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/48510820441?text=Hello,%20I%20am%20interested%20in%20Dubai%20Luxury%20Real%20Estate%20investment." target="_blank" class="hidden sm:flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 text-xs font-bold hover:bg-emerald-600/30 transition">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span data-i18n="nav_whatsapp">WhatsApp Advisor</span>
+        </a>
+        <button onclick="scrollToLeadForm()" class="gold-btn px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider font-cinzel" data-i18n="nav_register">
+          Register Interest
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION WITH DIRECT LEAD FORM ================= -->
+  <section class="relative min-h-[90vh] flex items-center justify-center hero-glow py-14 px-6 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=2000&q=85" alt="Dubai Luxury Skyline" class="w-full h-full object-cover object-center opacity-30">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#080b11] via-[#080b11]/80 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#080b11] via-transparent to-[#080b11]"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Left Column: Value Proposition -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-amber-950/60 border border-amber-500/40 text-amber-300 text-xs font-semibold uppercase tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span> 
+          <span data-i18n="hero_badge">Exclusive European Investor Release · 2026</span>
+        </div>
+
+        <h1 class="font-cinzel text-4xl sm:text-6xl font-black leading-[1.1] tracking-tight">
+          <span data-i18n="hero_title_1">OWN LUXURY PROPERTY IN</span> <br class="hidden sm:inline" />
+          <span class="gold-gradient-text" data-i18n="hero_title_2">DUBAI FROM EUROPE</span>
+        </h1>
+
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl font-normal" data-i18n="hero_desc">
+          High-yielding beachfront apartments, crystal lagoon villas, and architectural marvels. Enjoy 10-year residency Golden Visas, zero personal tax, and direct master developer pricing with flexible post-handover payment plans.
+        </p>
+
+        <!-- Trust Badges Grid -->
+        <div class="grid grid-cols-3 gap-3 pt-4 border-t border-white/10 max-w-lg">
+          <div class="p-3 rounded-2xl bg-white/5 border border-white/10 text-center">
+            <div class="font-cinzel text-xl sm:text-2xl font-black text-amber-300">0%</div>
+            <div class="text-[10px] text-slate-400 font-semibold uppercase mt-0.5" data-i18n="badge_tax">Tax on Income</div>
+          </div>
+          <div class="p-3 rounded-2xl bg-white/5 border border-white/10 text-center">
+            <div class="font-cinzel text-xl sm:text-2xl font-black text-amber-300">8 - 10%</div>
+            <div class="text-[10px] text-slate-400 font-semibold uppercase mt-0.5" data-i18n="badge_roi">Rental Yields</div>
+          </div>
+          <div class="p-3 rounded-2xl bg-white/5 border border-white/10 text-center">
+            <div class="font-cinzel text-xl sm:text-2xl font-black text-amber-300">1%</div>
+            <div class="text-[10px] text-slate-400 font-semibold uppercase mt-0.5" data-i18n="badge_payment">Monthly Payment</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Lead Capture Form -->
+      <div id="leadFormContainer" class="lg:col-span-5">
+        <div class="luxury-card rounded-3xl p-6 sm:p-8 gold-border shadow-2xl relative">
+          
+          <div class="text-center mb-5">
+            <span class="font-cinzel text-xs text-amber-400 font-bold uppercase tracking-widest" data-i18n="form_tag">VIP Investment Advisory</span>
+            <h3 class="font-cinzel text-xl sm:text-2xl font-black text-white mt-1" data-i18n="form_title">Register For Exclusive Access</h3>
+            <p class="text-xs text-slate-400 mt-1" data-i18n="form_subtitle">Instant Floor Plans, Brochures & 2026 Inventory Release</p>
+          </div>
+
+          <form id="heroLeadForm" onsubmit="handleLeadSubmission(event)" class="space-y-3 text-xs">
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_name">Your Full Name *</label>
+              <input type="text" id="leadName" required placeholder="Subrata Mondal" class="w-full bg-black/60 border border-slate-700 rounded-xl px-3.5 py-2.5 text-white outline-none focus:border-amber-400 transition">
+            </div>
+
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_email">Email Address (for brochure & pricing) *</label>
+              <input type="email" id="leadEmail" required placeholder="name@example.com" class="w-full bg-black/60 border border-slate-700 rounded-xl px-3.5 py-2.5 text-white outline-none focus:border-amber-400 transition">
+            </div>
+
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_phone">Phone Number (with dial code) *</label>
+              <div class="grid grid-cols-12 gap-2">
+                <select id="leadDialCode" class="col-span-4 bg-slate-900 border border-slate-700 rounded-xl px-2 py-2.5 text-amber-300 outline-none text-xs">
+                  <option value="+48">🇵🇱 +48 (PL)</option>
+                  <option value="+49">🇩🇪 +49 (DE)</option>
+                  <option value="+44">🇬🇧 +44 (UK)</option>
+                  <option value="+33">🇫🇷 +33 (FR)</option>
+                  <option value="+39">🇮🇹 +39 (IT)</option>
+                  <option value="+971" selected>🇦🇪 +971 (AE)</option>
+                  <option value="+1">🇺🇸 +1 (US)</option>
+                  <option value="+91">🇮🇳 +91 (IN)</option>
+                </select>
+                <input type="tel" id="leadPhone" required placeholder="510 820 441" class="col-span-8 bg-black/60 border border-slate-700 rounded-xl px-3.5 py-2.5 text-white outline-none focus:border-amber-400 transition">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2">
+              <div>
+                <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_country">Your Location *</label>
+                <input type="text" id="leadCountry" required placeholder="Poland / Germany / India" class="w-full bg-black/60 border border-slate-700 rounded-xl px-3 py-2 text-white outline-none focus:border-amber-400">
+              </div>
+              <div>
+                <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_budget">Investment Budget *</label>
+                <select id="leadBudget" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-2.5 py-2 text-amber-300 outline-none">
+                  <option value="€200,000 - €400,000">€200k - €400k</option>
+                  <option value="€400,000 - €800,000" selected>€400k - €800k</option>
+                  <option value="€800,000 - €2,000,000">€800k - €2M (Golden Visa)</option>
+                  <option value="€2,000,000+">€2M+ (Penthouse)</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_project">Interested Project / Community</label>
+              <select id="leadProjectSelect" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-white outline-none">
+                <option value="DAMAC Lagoons · Morocco">DAMAC Lagoons · Mediterranean Waterfront Villas</option>
+                <option value="Safa Two · Sky Luxury">Safa Two · Sky Residences by Safa Park</option>
+                <option value="Bayz 101 · Business Bay">Bayz 101 · Burj Khalifa View Sky Suites</option>
+              </select>
+            </div>
+
+            <button type="submit" id="btnSubmitLead" class="w-full py-3.5 rounded-xl gold-btn text-xs font-black uppercase tracking-wider font-cinzel mt-2" data-i18n="btn_submit_lead">
+              Download Brochure & Pricing ↗
+            </button>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= LUXURY PROJECT SHOWCASE (LIVE SYNCED WITH ADMIN & GOOGLE SHEETS) ================= -->
+  <section class="py-20 px-6 max-w-7xl mx-auto" id="projects">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="font-cinzel text-xs font-bold text-amber-400 uppercase tracking-widest" data-i18n="sec_projects_tag">Curated Dubai Master Developments</span>
+      <h2 class="font-cinzel text-3xl sm:text-5xl font-black text-white mt-2" data-i18n="sec_projects_title">
+        FEATURED INVESTMENT PROJECTS
+      </h2>
+      <div class="w-20 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mt-4"></div>
+      <p class="text-xs sm:text-sm text-slate-400 mt-3" data-i18n="sec_projects_desc">
+        Direct from developer allocations with guaranteed rental programs and flexible milestone payment structures.
+      </p>
+    </div>
+
+    <!-- Dynamic Projects Grid (Rendered from JS & Google Sheet) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projectsGrid"></div>
+  </section>
+
+  <!-- ================= INVESTOR ROI & PAYMENT PLAN CALCULATOR ================= -->
+  <section class="py-16 px-6 bg-slate-950/60 border-y border-white/10">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-10">
+        <span class="font-cinzel text-xs font-bold text-amber-400 uppercase tracking-widest" data-i18n="calc_tag">Financial Engineering</span>
+        <h2 class="font-cinzel text-2xl sm:text-4xl font-black text-white mt-1" data-i18n="calc_title">DUBAI ROI & CAPITAL RETURN ESTIMATOR</h2>
+        <p class="text-xs text-slate-400 mt-1" data-i18n="calc_subtitle">Simulate your net returns comparing European taxation vs. Dubai's 0% Tax Environment</p>
+      </div>
+
+      <div class="luxury-card rounded-3xl p-8 gold-border grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-5 text-xs">
+          <div>
+            <label class="block text-slate-300 font-semibold mb-2">
+              <span data-i18n="calc_prop_val">Property Investment Value:</span> <span id="calcValLabel" class="text-amber-300 font-bold text-sm">€500,000</span>
+            </label>
+            <input type="range" id="propValSlider" min="250000" max="2500000" step="25000" value="500000" oninput="calculateROI()" class="w-full accent-amber-400 cursor-pointer">
+          </div>
+
+          <div>
+            <label class="block text-slate-300 font-semibold mb-2">
+              <span data-i18n="calc_yield">Expected Net Rental Yield:</span> <span id="calcYieldLabel" class="text-emerald-400 font-bold text-sm">8.5%</span>
+            </label>
+            <input type="range" id="yieldSlider" min="6.0" max="12.0" step="0.5" value="8.5" oninput="calculateROI()" class="w-full accent-emerald-400 cursor-pointer">
+          </div>
+
+          <div class="p-4 rounded-2xl bg-black/40 border border-white/10 space-y-2">
+            <div class="flex justify-between text-slate-300">
+              <span data-i18n="calc_eu_tax">Annual Tax in Europe (~35% avg):</span>
+              <span id="euTaxDeduction" class="text-rose-400 font-bold">-€14,875 / yr</span>
+            </div>
+            <div class="flex justify-between text-white font-bold border-t border-white/10 pt-2">
+              <span data-i18n="calc_uae_tax">Tax Paid in Dubai (UAE):</span>
+              <span class="text-emerald-400">€0.00 (Zero Tax)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculated Summary Box -->
+        <div class="bg-gradient-to-tr from-amber-950/40 via-slate-900 to-black p-6 rounded-2xl border border-amber-500/30 text-center space-y-4">
+          <span class="text-[10px] uppercase font-bold text-amber-400 tracking-widest font-cinzel" data-i18n="calc_net_income_tag">Projected Net Annual Return</span>
+          <div id="annualIncomeBox" class="font-cinzel text-4xl sm:text-5xl font-black text-white gold-gradient-text">
+            €42,500
+          </div>
+          <p class="text-slate-400 text-xs" data-i18n="calc_net_income_note">Tax-Free Passive Income Paid Directly in USD/EUR</p>
+
+          <div class="pt-4 border-t border-white/10 flex justify-between items-center text-xs">
+            <span class="text-slate-300" data-i18n="calc_cap_gain">5-Year Capital Gain (est. 35%):</span>
+            <span id="fiveYearGain" class="text-emerald-400 font-bold">+€175,000</span>
+          </div>
+
+          <button onclick="scrollToLeadForm()" class="w-full py-3 rounded-xl gold-btn text-xs font-bold uppercase tracking-wider font-cinzel mt-2" data-i18n="btn_claim_unit">
+            Claim Guaranteed Unit Allocation ↗
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ADMIN PANEL MODAL (PIN: 5047 TO ADD PROPERTIES & PHOTOS) ================= -->
+  <div id="adminModal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-xl hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="luxury-card gold-border rounded-3xl max-w-2xl w-full p-6 sm:p-8 relative my-8">
+      <button onclick="closeModal('adminModal')" class="absolute top-5 right-5 text-slate-400 hover:text-white text-lg">✕</button>
+
+      <!-- Step 1: Admin PIN Verification -->
+      <div id="adminAuthSection">
+        <h3 class="font-cinzel text-xl font-bold text-amber-400 mb-2">Master Real Estate Admin Key</h3>
+        <p class="text-xs text-slate-400 mb-4">Enter security passcode (5047) to manage and upload properties with custom photos.</p>
+        <input type="password" id="adminPin" maxlength="4" placeholder="••••" class="w-full text-center tracking-widest text-2xl bg-black/60 border border-slate-700 rounded-xl p-3 text-amber-300 mb-4 outline-none font-mono">
+        <button onclick="verifyAdminPin()" class="w-full py-3 rounded-xl gold-btn font-cinzel text-xs font-bold uppercase">Unlock Admin Console</button>
+      </div>
+
+      <!-- Step 2: Add New Property with Photo Form -->
+      <div id="adminActionSection" class="hidden space-y-4">
+        <div class="border-b border-white/10 pb-3 flex justify-between items-center">
+          <div>
+            <h3 class="font-cinzel text-lg font-bold text-white">Add New Property to Inventory</h3>
+            <p class="text-[11px] text-slate-400">Syncs directly into Google Sheets and instantly appears on this website.</p>
+          </div>
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/30">PIN 5047 Verified</span>
+        </div>
+
+        <form onsubmit="handleAdminAddProperty(event)" class="space-y-3 text-xs">
+          <div>
+            <label class="block text-slate-300 font-semibold mb-1">Property Name *</label>
+            <input type="text" id="admPropName" required placeholder="e.g. Cavalli Tower Luxury Suites" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400">
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1">Location / Tag *</label>
+              <input type="text" id="admLocation" required placeholder="e.g. Dubai Marina / Beachfront" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400">
+            </div>
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1">Starting Price in AED *</label>
+              <input type="number" id="admPriceAed" required placeholder="e.g. 2100000" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-amber-300 outline-none focus:border-amber-400">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1">Expected ROI / Yield *</label>
+              <input type="text" id="admRoi" required placeholder="e.g. 9.8% Net Yield" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400">
+            </div>
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1">Handover Year *</label>
+              <input type="text" id="admHandover" required placeholder="e.g. Q4 2027" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400">
+            </div>
+          </div>
+
+          <!-- Cover Image Photo URL -->
+          <div>
+            <label class="block text-slate-300 font-semibold mb-1">Primary Real Photo / Screenshot URL *</label>
+            <input type="url" id="admCoverImage" required placeholder="https://images.unsplash.com/... or Google Drive direct image link" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400">
+          </div>
+
+          <div>
+            <label class="block text-slate-300 font-semibold mb-1">Property Description</label>
+            <textarea id="admDesc" rows="2" placeholder="Brief summary of views, private pool, or luxury finishes..." class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400 resize-none"></textarea>
+          </div>
+
+          <button type="submit" id="btnAdminPublish" class="w-full py-3 rounded-xl gold-btn font-cinzel font-bold text-xs uppercase tracking-wider mt-2">
+            Publish Property To Live Website ↗
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= POPUP MODAL FOR BROCHURE / FLOOR PLANS ================= -->
+  <div id="inquiryModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-xl hidden items-center justify-center p-4">
+    <div class="luxury-card gold-border rounded-3xl max-w-md w-full p-6 relative">
+      <button onclick="closeModal('inquiryModal')" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">✕</button>
+
+      <div class="text-center mb-5">
+        <span class="font-cinzel text-[10px] text-amber-400 uppercase tracking-widest" data-i18n="modal_pack_tag">Confidential Information Pack</span>
+        <h3 id="modalProjectTitle" class="font-cinzel text-lg font-bold text-white mt-1">Project Floor Plans & Pricing</h3>
+      </div>
+
+      <form onsubmit="handleModalSubmit(event)" class="space-y-3 text-xs">
+        <div>
+          <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_name">Your Full Name *</label>
+          <input type="text" id="mLeadName" required placeholder="Subrata Mondal" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400">
+        </div>
+        <div>
+          <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_email">Email Address *</label>
+          <input type="email" id="mLeadEmail" required placeholder="name@example.com" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400">
+        </div>
+        <div>
+          <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_phone">WhatsApp / Phone with Dial Code *</label>
+          <input type="tel" id="mLeadPhone" required placeholder="+48 510 820 441" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400">
+        </div>
+        <button type="submit" id="btnModalSubmit" class="w-full py-3 rounded-xl gold-btn font-cinzel font-bold text-xs uppercase tracking-wider mt-2" data-i18n="btn_send_plans">
+          Send Floor Plans via WhatsApp / Email ↗
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= FLOATING STICKY VIP CONNECT ================= -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3">
+    <a href="https://wa.me/48510820441?text=Hello,%20please%20send%20me%20the%20Dubai%20Real%20Estate%20Brochure%20and%20payment%20plans." target="_blank" class="flex items-center gap-2 pl-3.5 pr-4 py-2.5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 border border-emerald-400/50 text-white shadow-2xl transition hover:scale-105">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+      <div class="text-left">
+        <span class="block text-[9px] uppercase tracking-wider text-emerald-200 font-bold">Direct Channel</span>
+        <span class="text-xs font-bold font-cinzel">VIP WhatsApp</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-white/10 bg-black py-10 px-6 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <div>
+        <p class="font-cinzel text-slate-300 text-sm font-bold tracking-wider">BERIGHT PROPERTIES · DUBAI</p>
+        <p class="text-[11px] text-slate-500 mt-1">Authorized Representative for Premier Dubai Master Developers.</p>
+      </div>
+      <div class="flex items-center gap-4 text-slate-400 text-[11px]">
+        <span>Licensed by RERA & Dubai Land Department Guidelines.</span>
+        <button onclick="openAdminModal()" class="text-slate-400 hover:text-amber-400 transition ml-2">
+          <i class="fa-solid fa-lock"></i> Admin Portal
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= JAVASCRIPT CONTROLLER (MULTILINGUAL + ADMIN + CURRENCY) ================= -->
+  <script>
+    // -------------------------------------------------------------
+    // [ PASTE YOUR APPS SCRIPT DEPLOYED WEB APP URL HERE ]
+    // -------------------------------------------------------------
+    const SCRIPT_URL = "YOUR_DEPLOYED_WEB_APP_URL";
+    // -------------------------------------------------------------
+
+    // 1. TRI-LINGUAL DICTIONARY (ENGLISH DEFAULT, BENGALI, HINDI)
+    const translations = {
+      en: {
+        top_visa: '<i class="fa-solid fa-passport"></i> 10-Year UAE Golden Visa Eligible',
+        top_tax: '<i class="fa-solid fa-percent text-amber-400"></i> 0% Property & Rental Income Tax',
+        brand_subtitle: 'Dubai Premier Residences',
+        nav_whatsapp: 'WhatsApp Advisor',
+        nav_register: 'Register Interest',
+        hero_badge: 'Exclusive European Investor Release · 2026',
+        hero_title_1: 'OWN LUXURY PROPERTY IN',
+        hero_title_2: 'DUBAI FROM EUROPE',
+        hero_desc: 'High-yielding beachfront apartments, crystal lagoon villas, and architectural marvels. Enjoy 10-year residency Golden Visas, zero personal tax, and direct master developer pricing with flexible post-handover payment plans.',
+        badge_tax: 'Tax on Income',
+        badge_roi: 'Rental Yields',
+        badge_payment: 'Monthly Payment',
+        form_tag: 'VIP Investment Advisory',
+        form_title: 'Register For Exclusive Access',
+        form_subtitle: 'Instant Floor Plans, Brochures & 2026 Inventory Release',
+        label_name: 'Your Full Name *',
+        label_email: 'Email Address (for brochure & pricing) *',
+        label_phone: 'Phone Number (with dial code) *',
+        label_country: 'Your Location *',
+        label_budget: 'Investment Budget *',
+        label_project: 'Interested Project / Community',
+        btn_submit_lead: 'Download Brochure & Pricing ↗',
+        sec_projects_tag: 'Curated Dubai Master Developments',
+        sec_projects_title: 'FEATURED INVESTMENT PROJECTS',
+        sec_projects_desc: 'Direct from developer allocations with guaranteed rental programs and flexible milestone payment structures.',
+        calc_tag: 'Financial Engineering',
+        calc_title: 'DUBAI ROI & CAPITAL RETURN ESTIMATOR',
+        calc_subtitle: 'Simulate your net returns comparing European taxation vs. Dubai\'s 0% Tax Environment',
+        calc_prop_val: 'Property Investment Value:',
+        calc_yield: 'Expected Net Rental Yield:',
+        calc_eu_tax: 'Annual Tax in Europe (~35% avg):',
+        calc_uae_tax: 'Tax Paid in Dubai (UAE):',
+        calc_net_income_tag: 'Projected Net Annual Return',
+        calc_net_income_note: 'Tax-Free Passive Income Paid Directly in USD/EUR',
+        calc_cap_gain: '5-Year Capital Gain (est. 35%):',
+        btn_claim_unit: 'Claim Guaranteed Unit Allocation ↗',
+        modal_pack_tag: 'Confidential Information Pack',
+        btn_send_plans: 'Send Floor Plans via WhatsApp / Email ↗',
+        btn_req_plans: 'Request Floor Plans & Price Sheet',
+        lbl_starting_price: 'Starting Price',
+        lbl_projected_roi: 'Projected ROI'
+      },
+      bn: {
+        top_visa: '<i class="fa-solid fa-passport"></i> ১০ বছরের ইউএই গোল্ডেন ভিসা পাওয়ার সুযোগ',
+        top_tax: '<i class="fa-solid fa-percent text-amber-400"></i> প্রপার্টি ও ভাড়ার আয়ে ০% ট্যাক্স',
+        brand_subtitle: 'দুবাই প্রিমিয়ার রেসিডেন্সেস',
+        nav_whatsapp: 'হোয়াটসঅ্যাপে কথা বলুন',
+        nav_register: 'আগ্রহ প্রকাশ করুন',
+        hero_badge: 'ইউরোপীয় ও আন্তর্জাতিক বিনিয়োগকারীদের জন্য বিশেষ অফার · ২০২৬',
+        hero_title_1: 'দুবাইয়ের বিলাসবহুল প্রপার্টির মালিক হোন',
+        hero_title_2: 'সরাসরি ইউরোপ ও বিদেশ থেকে',
+        hero_desc: 'বিচফ্রন্ট অ্যাপার্টমেন্ট, ক্রিস্টাল লেগুন ভিলা এবং নান্দনিক স্কাইস্ক্র্যাপার। ১০ বছরের গোল্ডেন ভিসা, সম্পূর্ণ ট্যাক্স-মুক্ত আয় এবং সহজ মাসিক কিস্তিতে সরাসরি মাস্টার ডেভেলপারের মূল্যে বুকিং করুন।',
+        badge_tax: 'আয়ের ওপর শূন্য ট্যাক্স',
+        badge_roi: 'বার্ষিক ভাড়া লাভ',
+        badge_payment: 'সহজ মাসিক কিস্তি',
+        form_tag: 'ভিআইপি ইনভেস্টমেন্ট অ্যাডভাইজরি',
+        form_title: 'ব্রোশিওর ও এক্সক্লুসিভ অফারের জন্য রেজিস্টার করুন',
+        form_subtitle: 'ইনস্ট্যান্ট ফ্লোর প্ল্যান, প্রাইস লিস্ট এবং ২০২৬ এর নতুন ইনভেন্টরি',
+        label_name: 'আপনার পুরো নাম *',
+        label_email: 'ইমেইল অ্যাড্রেস (ব্রোশিওর পাওয়ার জন্য) *',
+        label_phone: 'মোবাইল নম্বর (ডায়াল কোড সহ) *',
+        label_country: 'আপনার বর্তমান দেশ / লোকেশন *',
+        label_budget: 'বিনিয়োগের বাজেট *',
+        label_project: 'পছন্দের প্রজেক্ট বা এরিয়া',
+        btn_submit_lead: 'ব্রোশিওর ও প্রজেক্ট রেট ডাউনলোড করুন ↗',
+        sec_projects_tag: 'দুবাইয়ের সেরা মাস্টার প্রজেক্টসমূহ',
+        sec_projects_title: 'নির্বাচিত আকর্ষণীয় প্রপার্টিসমূহ',
+        sec_projects_desc: 'সরাসরি ডেভেলপার থেকে প্রজেক্ট বুকিং, নিশ্চিত ভাড়া লাভ এবং সহজ পেমেন্ট প্ল্যান সুবিধা।',
+        calc_tag: 'লাভের হিসাব ও বিশ্লেষণ',
+        calc_title: 'দুবাই আরওআই (ROI) ও রিটার্ন ক্যালকুলেটর',
+        calc_subtitle: 'ইউরোপের ৩৫% ট্যাক্সের বিপরীতে দুবাইয়ের ০% ট্যাক্স সুবিধায় আপনার নিট লাভের হিসাব দেখুন',
+        calc_prop_val: 'প্রপার্টির মোট মূল্য:',
+        calc_yield: 'সম্ভাব্য বার্ষিক ভাড়ার লাভ:',
+        calc_eu_tax: 'ইউরোপে বার্ষিক ট্যাক্স কর্তন (~৩৫%):',
+        calc_uae_tax: 'দুবাইয়ে (UAE) ট্যাক্স কর্তন:',
+        calc_net_income_tag: 'সম্ভাব্য নিট বার্ষিক আয়',
+        calc_net_income_note: 'সম্পূর্ণ ট্যাক্স-মুক্ত প্যাসিভ ইনকাম সরাসরি USD/EUR এ পাবেন',
+        calc_cap_gain: '৫ বছরে ক্যাপিটাল বৃদ্ধি (আনুমানিক ৩৫%):',
+        btn_claim_unit: 'আপনার পছন্দের ইউনিট বুক করুন ↗',
+        modal_pack_tag: 'গোপনীয় ইনফরমেশন প্যাক',
+        btn_send_plans: 'ফ্লোর প্ল্যান হোয়াটসঅ্যাপ বা ইমেইলে পাঠান ↗',
+        btn_req_plans: 'ফ্লোর প্ল্যান ও প্রাইস লিস্টের অনুরোধ করুন',
+        lbl_starting_price: 'শুরুর মূল্য',
+        lbl_projected_roi: 'সম্ভাব্য বার্ষিক লাভ'
+      },
+      hi: {
+        top_visa: '<i class="fa-solid fa-passport"></i> 10-साल का यूएई गोल्डन वीज़ा योग्य',
+        top_tax: '<i class="fa-solid fa-percent text-amber-400"></i> प्रॉपर्टी और किराये की आय पर 0% टैक्स',
+        brand_subtitle: 'दुबई प्रीमियर रेजिडेंस',
+        nav_whatsapp: 'व्हाट्सएप सलाहकार',
+        nav_register: 'रुचि दर्ज करें',
+        hero_badge: 'यूरोपीय और अंतरराष्ट्रीय निवेशकों के लिए विशेष रिलीज · 2026',
+        hero_title_1: 'दुबई में लग्जरी प्रॉपर्टी के मालिक बनें',
+        hero_title_2: 'यूरोप और विदेश से सीधे',
+        hero_desc: 'बीचफ्रंट अपार्टमेंट, क्रिस्टल लैगून विला और आधुनिक गगनचुंबी इमारतें। 10 साल का गोल्डन वीज़ा, शून्य टैक्स और आसान किस्तों पर सीधे मास्टर डेवलपर से बुक करें।',
+        badge_tax: 'आय पर शून्य टैक्स',
+        badge_roi: 'वार्षिक किराया लाभ',
+        badge_payment: 'आसान मासिक किस्त',
+        form_tag: 'वीआईपी निवेश परामर्श',
+        form_title: 'एक्सक्लूसिव एक्सेस के लिए रजिस्टर करें',
+        form_subtitle: 'तुरंत फ्लोर प्लान, ब्रोशर और 2026 की नई इन्वेंट्री प्राप्त करें',
+        label_name: 'आपका पूरा नाम *',
+        label_email: 'ईमेल पता (ब्रोशर और कीमतों के लिए) *',
+        label_phone: 'फ़ोन नंबर (डायल कोड सहित) *',
+        label_country: 'आपका वर्तमान स्थान / देश *',
+        label_budget: 'निवेश बजट *',
+        label_project: 'पसंदीदा प्रोजेक्ट / कम्युनिटी',
+        btn_submit_lead: 'ब्रोशर और मूल्य सूची डाउनलोड करें ↗',
+        sec_projects_tag: 'दुबई के सर्वश्रेष्ठ मास्टर प्रोजेक्ट्स',
+        sec_projects_title: 'प्रमुख निवेश संपत्तियां',
+        sec_projects_desc: 'सीधे डेवलपर से आवंटन, गारंटीकृत किराया लाभ और लचीली भुगतान योजनाएं।',
+        calc_tag: 'वित्तीय लाभ अनुमान',
+        calc_title: 'दुबई आरओआई (ROI) और लाभ कैलकुलेटर',
+        calc_subtitle: 'यूरोपीय टैक्स (35%) की तुलना में दुबई के 0% टैक्स में अपनी शुद्ध आय देखें',
+        calc_prop_val: 'प्रॉपर्टी निवेश मूल्य:',
+        calc_yield: 'अपेक्षित शुद्ध किराया लाभ:',
+        calc_eu_tax: 'यूरोप में वार्षिक टैक्स (~35%):',
+        calc_uae_tax: 'दुबई में टैक्स (UAE):',
+        calc_net_income_tag: 'अनुमानित शुद्ध वार्षिक आय',
+        calc_net_income_note: 'टैक्स-मुक्त आय सीधे USD/EUR में प्राप्त करें',
+        calc_cap_gain: '5 वर्षों में मूल्य वृद्धि (अनुमानित 35%):',
+        btn_claim_unit: 'गारंटीकृत यूनिट सुरक्षित करें ↗',
+        modal_pack_tag: 'गोपनीय जानकारी पैक',
+        btn_send_plans: 'व्हाट्सएप / ईमेल पर फ्लोर प्लान भेजें ↗',
+        btn_req_plans: 'फ्लोर प्लान और मूल्य सूची का अनुरोध करें',
+        lbl_starting_price: 'शुरुआती कीमत',
+        lbl_projected_roi: 'अनुमानित किराया लाभ'
+      }
+    };
+
+    let currentLang = "en";
+    let currentCurrency = "EUR";
+
+    const exchangeRates = {
+      AED: 1,
+      EUR: 0.25,
+      USD: 0.27,
+      PLN: 1.08
+    };
+
+    // Starter Default Projects
+    let liveProjects = [
+      {
+        "Project Name": "DAMAC Lagoons · Morocco",
+        "Location/Tag": "Waterfront Community",
+        "Description": "Mediterranean-inspired luxury villas surrounded by crystal-clear swimmable lagoons.",
+        "Starting Price AED": 2200000,
+        "Expected ROI": "9.4% Net Yield",
+        "Handover": "Q4 2026",
+        "Cover Image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "Project Name": "Safa Two · Sky Luxury",
+        "Location/Tag": "De Grisogono Branded",
+        "Description": "High-altitude luxury residences branded by Swiss jeweler De Grisogono with fog forest.",
+        "Starting Price AED": 1600000,
+        "Expected ROI": "10-Yr Golden Visa",
+        "Handover": "Q2 2027",
+        "Cover Image": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "Project Name": "Bayz 101 · Business Bay",
+        "Location/Tag": "Burj Khalifa View",
+        "Description": "101-level skyscraper directly in Downtown Business Bay with private infinity plunge pools.",
+        "Starting Price AED": 1400000,
+        "Expected ROI": "1% Monthly Plan",
+        "Handover": "Q1 2028",
+        "Cover Image": "https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&fit=crop&w=1000&q=80"
+      }
+    ];
+
+    // Language Setter Function
+    function setLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem('dubai_lang', lang);
+
+      ["en", "bn", "hi"].forEach(l => {
+        const btn = document.getElementById(`lang-${l}`);
+        if (l === lang) {
+          btn.className = "px-2.5 py-0.5 rounded bg-amber-400 text-slate-950 transition font-bold";
+        } else {
+          btn.className = "px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition font-normal";
+        }
+      });
+
+      // Apply body fonts
+      document.body.classList.remove('lang-bn', 'lang-hi');
+      if (lang === 'bn') document.body.classList.add('lang-bn');
+      if (lang === 'hi') document.body.classList.add('lang-hi');
+
+      // Update text using data-i18n
+      const dict = translations[lang] || translations.en;
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key]) el.innerHTML = dict[key];
+      });
+
+      renderProjectsGrid();
+    }
+
+    // Currency Setter Function
+    function setCurrency(curr) {
+      currentCurrency = curr;
+      ["EUR", "USD", "AED", "PLN"].forEach(c => {
+        const btn = document.getElementById(`curr-${c}`);
+        if (c === curr) {
+          btn.className = "px-2.5 py-0.5 rounded bg-amber-400 text-slate-950 transition font-bold";
+        } else {
+          btn.className = "px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition font-normal";
+        }
+      });
+
+      renderProjectsGrid();
+      calculateROI();
+    }
+
+    // Format Prices Dynamically
+    function formatPrice(aedAmount) {
+      const rate = exchangeRates[currentCurrency] || 0.25;
+      const converted = Math.round(aedAmount * rate);
+
+      let symbol = "€";
+      if (currentCurrency === "USD") symbol = "$";
+      if (currentCurrency === "AED") symbol = "AED ";
+      if (currentCurrency === "PLN") symbol = "zł ";
+
+      return `${symbol}${converted.toLocaleString()}`;
+    }
+
+    // Render Projects into DOM
+    function renderProjectsGrid() {
+      const grid = document.getElementById("projectsGrid");
+      grid.innerHTML = "";
+
+      const dict = translations[currentLang] || translations.en;
+
+      liveProjects.forEach(item => {
+        const name = item["Project Name"] || "Luxury Dubai Property";
+        const tag = item["Location/Tag"] || "Prime Dubai";
+        const desc = item["Description"] || "Ultra-luxury modern residence with panoramic views.";
+        const priceAed = Number(item["Starting Price AED"]) || 1500000;
+        const roi = item["Expected ROI"] || "9% Net Yield";
+        const handover = item["Handover"] || "Q4 2027";
+        const cover = item["Cover Image"] || "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1000&q=80";
+
+        const card = document.createElement("div");
+        card.className = "luxury-card rounded-3xl overflow-hidden flex flex-col justify-between";
+        card.innerHTML = `
+          <div>
+            <div class="relative h-64 overflow-hidden">
+              <img src="${cover}" alt="${name}" class="w-full h-full object-cover transition duration-700 hover:scale-105" loading="lazy">
+              <span class="absolute top-4 left-4 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-black/80 backdrop-blur-md text-amber-300 border border-amber-400/40 font-cinzel">
+                ${tag}
+              </span>
+              <div class="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-black/85 text-[10px] font-semibold text-slate-200">
+                Handover: ${handover}
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-cinzel text-xl font-bold text-white">${name}</h3>
+              <p class="text-xs text-slate-400 mt-1">${desc}</p>
+              
+              <div class="grid grid-cols-2 gap-2 my-4 pt-3 border-t border-white/10 text-xs">
+                <div>
+                  <span class="text-[10px] text-slate-500 uppercase block font-semibold">${dict.lbl_starting_price}</span>
+                  <span class="font-bold text-amber-300 text-sm">${formatPrice(priceAed)}</span>
+                </div>
+                <div>
+                  <span class="text-[10px] text-slate-500 uppercase block font-semibold">${dict.lbl_projected_roi}</span>
+                  <span class="font-bold text-emerald-400 text-sm">${roi}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <button onclick="openInquiryModal('${name.replace(/'/g, "\\'")}')" class="w-full py-3 rounded-xl bg-white/10 hover:bg-amber-400 hover:text-black border border-white/15 text-white font-bold text-xs uppercase tracking-wider transition font-cinzel">
+              ${dict.btn_req_plans}
+            </button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // Fetch Live Projects from Google Sheets
+    async function fetchInventoryFromSheets() {
+      if (!SCRIPT_URL || SCRIPT_URL === "YOUR_DEPLOYED_WEB_APP_URL") {
+        renderProjectsGrid();
+        return;
+      }
+      try {
+        const res = await fetch(SCRIPT_URL);
+        const data = await res.json();
+        if (data.status === "success" && data.projects && data.projects.length > 0) {
+          liveProjects = data.projects;
+          renderProjectsGrid();
+        }
+      } catch (e) {
+        renderProjectsGrid();
+      }
+    }
+
+    // Calculator Logic
+    function calculateROI() {
+      const propVal = parseFloat(document.getElementById("propValSlider").value);
+      const yieldRate = parseFloat(document.getElementById("yieldSlider").value);
+
+      document.getElementById("calcValLabel").innerText = `€${propVal.toLocaleString()}`;
+      document.getElementById("calcYieldLabel").innerText = `${yieldRate.toFixed(1)}%`;
+
+      const annualIncome = Math.round(propVal * (yieldRate / 100));
+      const euTax = Math.round(annualIncome * 0.35);
+      const fiveYearCapGain = Math.round(propVal * 0.35);
+
+      document.getElementById("annualIncomeBox").innerText = `€${annualIncome.toLocaleString()}`;
+      document.getElementById("euTaxDeduction").innerText = `-€${euTax.toLocaleString()} / yr`;
+      document.getElementById("fiveYearGain").innerText = `+€${fiveYearCapGain.toLocaleString()}`;
+    }
+
+    function scrollToLeadForm() {
+      document.getElementById("leadFormContainer").scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Admin Panel (PIN 5047) Functions
+    function openAdminModal() {
+      document.getElementById("adminPin").value = "";
+      document.getElementById("adminAuthSection").classList.remove("hidden");
+      document.getElementById("adminActionSection").classList.add("hidden");
+      document.getElementById("adminModal").classList.remove("hidden");
+      document.getElementById("adminModal").classList.add("flex");
+    }
+
+    function verifyAdminPin() {
+      const pin = document.getElementById("adminPin").value.trim();
+      if (pin === "5047") {
+        document.getElementById("adminAuthSection").classList.add("hidden");
+        document.getElementById("adminActionSection").classList.remove("hidden");
+      } else {
+        alert("Invalid Admin Key! Access denied.");
+      }
+    }
+
+    async function handleAdminAddProperty(e) {
+      e.preventDefault();
+      const btn = document.getElementById("btnAdminPublish");
+      btn.disabled = true;
+      btn.innerText = "Publishing to Google Sheet...";
+
+      const newProp = {
+        action: "add_property",
+        projectName: document.getElementById("admPropName").value,
+        location: document.getElementById("admLocation").value,
+        priceAed: document.getElementById("admPriceAed").value,
+        roi: document.getElementById("admRoi").value,
+        handover: document.getElementById("admHandover").value,
+        coverImage: document.getElementById("admCoverImage").value,
+        description: document.getElementById("admDesc").value
+      };
+
+      try {
+        if (SCRIPT_URL && SCRIPT_URL !== "YOUR_DEPLOYED_WEB_APP_URL") {
+          await fetch(SCRIPT_URL, {
+            method: "POST",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(newProp)
+          });
+        }
+        
+        // Push locally for instant display
+        liveProjects.unshift({
+          "Project Name": newProp.projectName,
+          "Location/Tag": newProp.location,
+          "Description": newProp.description,
+          "Starting Price AED": Number(newProp.priceAed),
+          "Expected ROI": newProp.roi,
+          "Handover": newProp.handover,
+          "Cover Image": newProp.coverImage
+        });
+
+        renderProjectsGrid();
+        alert("New Property published successfully with custom photo!");
+        closeModal("adminModal");
+        e.target.reset();
+      } catch (err) {
+        alert("Published locally!");
+        closeModal("adminModal");
+      } finally {
+        btn.disabled = false;
+        btn.innerText = "Publish Property To Live Website ↗";
+      }
+    }
+
+    // Inquiry Modal
+    function openInquiryModal(projectName) {
+      document.getElementById("modalProjectTitle").innerText = projectName;
+      document.getElementById("inquiryModal").classList.remove("hidden");
+      document.getElementById("inquiryModal").classList.add("flex");
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.add("hidden");
+      document.getElementById(id).classList.remove("flex");
+    }
+
+    // Lead Form Submissions
+    async function handleLeadSubmission(e) {
+      e.preventDefault();
+      const btn = document.getElementById("btnSubmitLead");
+      btn.disabled = true;
+      btn.innerText = "Transmitting Credentials...";
+
+      const payload = {
+        fullName: document.getElementById("leadName").value,
+        email: document.getElementById("leadEmail").value,
+        dialCode: document.getElementById("leadDialCode").value,
+        phone: document.getElementById("leadPhone").value,
+        currency: currentCurrency,
+        budget: document.getElementById("leadBudget").value,
+        projectName: document.getElementById("leadProjectSelect").value,
+        investorCountry: document.getElementById("leadCountry").value,
+        propertyType: "Luxury Suite / Villa"
+      };
+
+      try {
+        if (SCRIPT_URL && SCRIPT_URL !== "YOUR_DEPLOYED_WEB_APP_URL") {
+          await fetch(SCRIPT_URL, {
+            method: "POST",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(payload)
+          });
+        }
+        alert("Thank you! Your VIP inquiry has been registered. The brochure and pricing sheet have been sent.");
+        e.target.reset();
+      } catch (err) {
+        alert("Inquiry registered! Our advisor will contact you shortly.");
+      } finally {
+        btn.disabled = false;
+        btn.innerText = translations[currentLang].btn_submit_lead;
+      }
+    }
+
+    async function handleModalSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById("btnModalSubmit");
+      btn.disabled = true;
+      btn.innerText = "Sending...";
+
+      const payload = {
+        fullName: document.getElementById("mLeadName").value,
+        email: document.getElementById("mLeadEmail").value,
+        dialCode: "",
+        phone: document.getElementById("mLeadPhone").value,
+        currency: currentCurrency,
+        budget: "€400k - €800k",
+        projectName: document.getElementById("modalProjectTitle").innerText,
+        investorCountry: "International",
+        propertyType: "Floor Plan Request"
+      };
+
+      try {
+        if (SCRIPT_URL && SCRIPT_URL !== "YOUR_DEPLOYED_WEB_APP_URL") {
+          await fetch(SCRIPT_URL, {
+            method: "POST",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(payload)
+          });
+        }
+        alert("Floor plans sent to your contact details!");
+        closeModal("inquiryModal");
+        e.target.reset();
+      } catch (err) {
+        closeModal("inquiryModal");
+      } finally {
+        btn.disabled = false;
+        btn.innerText = translations[currentLang].btn_send_plans;
+      }
+    }
+
+    // Startup Initialization (English default)
+    window.addEventListener("DOMContentLoaded", () => {
+      const savedLang = localStorage.getItem('dubai_lang') || 'en';
+      setLanguage(savedLang);
+      calculateROI();
+      fetchInventoryFromSheets();
+    });
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Invest in Luxury Dubai Real Estate from Europe. 0% Income Tax, 10-Year Golden Visa Eligibility, and High Rental Returns directly from premier developers.">
+  <title>Luxury Dubai Real Estate | Exclusive European Investor Gateway</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --gold-primary: #d4af37;
+      --gold-light: #f7e089;
+      --gold-dark: #aa820a;
+      --dark-obsidian: #080b11;
+      --dark-card: #0d121c;
+    }
+
+    body {
+      background-color: var(--dark-obsidian);
+      color: #f1f5f9;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .lang-bn { font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif; }
+    .lang-hi { font-family: 'Noto Sans Devanagari', 'Plus Jakarta Sans', sans-serif; }
+    .font-cinzel { font-family: 'Cinzel', serif; }
+
+    /* Luxury Gold Gradients */
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #fff2be 0%, #d4af37 50%, #aa820a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-border {
+      border: 1px solid rgba(212, 175, 55, 0.35);
+    }
+    .gold-btn {
+      background: linear-gradient(135deg, #e8c85c 0%, #d4af37 50%, #b28a15 100%);
+      color: #080b11;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+    .gold-btn:hover {
+      box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.45);
+      transform: translateY(-2px);
+    }
+
+    .hero-glow {
+      background: radial-gradient(circle at 60% 30%, rgba(212, 175, 55, 0.15) 0%, rgba(8, 11, 17, 0) 70%);
+    }
+
+    .luxury-card {
+      background: rgba(13, 18, 28, 0.75);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .luxury-card:hover {
+      border-color: rgba(212, 175, 55, 0.45);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.15);
+    }
+  </style>
+</head>
+<body class="selection:bg-amber-400 selection:text-black">
+
+  <!-- ================= TOP LUXURY VIP BAR (LANGUAGE + CURRENCY) ================= -->
+  <div class="bg-black/90 border-b border-amber-500/20 py-2.5 px-4 text-xs">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
+      
+      <!-- Trust Points -->
+      <div class="flex items-center gap-4 text-slate-300">
+        <span class="flex items-center gap-1.5 text-amber-400 font-semibold" data-i18n="top_visa">
+          <i class="fa-solid fa-passport"></i> 10-Year UAE Golden Visa Eligible
+        </span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="hidden md:flex items-center gap-1.5 text-slate-300" data-i18n="top_tax">
+          <i class="fa-solid fa-percent text-amber-400"></i> 0% Property & Rental Income Tax
+        </span>
+      </div>
+
+      <!-- Controls: Currency & Language -->
+      <div class="flex flex-wrap items-center gap-4">
+        
+        <!-- Language Switcher (EN default, Bengali, Hindi) -->
+        <div class="flex items-center gap-1.5">
+          <span class="text-slate-400 text-[11px] uppercase font-bold tracking-wider"><i class="fa-solid fa-globe text-amber-400"></i></span>
+          <div class="flex bg-slate-900 border border-white/20 rounded-lg p-0.5 text-[11px] font-bold">
+            <button onclick="setLanguage('en')" id="lang-en" class="px-2.5 py-0.5 rounded bg-amber-400 text-slate-950 transition font-bold">English</button>
+            <button onclick="setLanguage('bn')" id="lang-bn" class="px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition">বাংলা</button>
+            <button onclick="setLanguage('hi')" id="lang-hi" class="px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition">हिन्दी</button>
+          </div>
+        </div>
+
+        <!-- Currency Switcher -->
+        <div class="flex items-center gap-1.5">
+          <div class="flex bg-slate-900 border border-amber-500/30 rounded-lg p-0.5 text-[11px] font-bold">
+            <button onclick="setCurrency('EUR')" id="curr-EUR" class="px-2.5 py-0.5 rounded bg-amber-400 text-slate-950 transition">EUR (€)</button>
+            <button onclick="setCurrency('USD')" id="curr-USD" class="px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition">USD ($)</button>
+            <button onclick="setCurrency('AED')" id="curr-AED" class="px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition">AED (د.إ)</button>
+            <button onclick="setCurrency('PLN')" id="curr-PLN" class="px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition">PLN (zł)</button>
+          </div>
+        </div>
+
+        <!-- Admin Control Trigger -->
+        <button onclick="openAdminModal()" title="Open Admin Panel" class="text-slate-400 hover:text-amber-400 text-xs px-2 py-1 rounded bg-white/5 border border-white/10 transition">
+          <i class="fa-solid fa-sliders"></i>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= LUXURY HEADER / NAVBAR ================= -->
+  <header class="sticky top-0 z-40 bg-[#080b11]/90 backdrop-blur-xl border-b border-white/10 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex flex-col">
+        <span class="font-cinzel text-xl sm:text-2xl font-black tracking-[0.2em] gold-gradient-text">
+          BERIGHT PROPERTIES
+        </span>
+        <span class="text-[9px] uppercase tracking-[0.3em] text-slate-400 font-semibold -mt-1" data-i18n="brand_subtitle">
+          Dubai Premier Residences
+        </span>
+      </a>
+
+      <!-- Direct VIP Connect & Actions -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/48510820441?text=Hello,%20I%20am%20interested%20in%20Dubai%20Luxury%20Real%20Estate%20investment." target="_blank" class="hidden sm:flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 text-xs font-bold hover:bg-emerald-600/30 transition">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span data-i18n="nav_whatsapp">WhatsApp Advisor</span>
+        </a>
+        <button onclick="scrollToLeadForm()" class="gold-btn px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider font-cinzel" data-i18n="nav_register">
+          Register Interest
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION WITH DIRECT LEAD FORM ================= -->
+  <section class="relative min-h-[90vh] flex items-center justify-center hero-glow py-14 px-6 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=2000&q=85" alt="Dubai Luxury Skyline" class="w-full h-full object-cover object-center opacity-30">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#080b11] via-[#080b11]/80 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#080b11] via-transparent to-[#080b11]"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Left Column: Value Proposition -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-amber-950/60 border border-amber-500/40 text-amber-300 text-xs font-semibold uppercase tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span> 
+          <span data-i18n="hero_badge">Exclusive European Investor Release · 2026</span>
+        </div>
+
+        <h1 class="font-cinzel text-4xl sm:text-6xl font-black leading-[1.1] tracking-tight">
+          <span data-i18n="hero_title_1">OWN LUXURY PROPERTY IN</span> <br class="hidden sm:inline" />
+          <span class="gold-gradient-text" data-i18n="hero_title_2">DUBAI FROM EUROPE</span>
+        </h1>
+
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl font-normal" data-i18n="hero_desc">
+          High-yielding beachfront apartments, crystal lagoon villas, and architectural marvels. Enjoy 10-year residency Golden Visas, zero personal tax, and direct master developer pricing with flexible post-handover payment plans.
+        </p>
+
+        <!-- Trust Badges Grid -->
+        <div class="grid grid-cols-3 gap-3 pt-4 border-t border-white/10 max-w-lg">
+          <div class="p-3 rounded-2xl bg-white/5 border border-white/10 text-center">
+            <div class="font-cinzel text-xl sm:text-2xl font-black text-amber-300">0%</div>
+            <div class="text-[10px] text-slate-400 font-semibold uppercase mt-0.5" data-i18n="badge_tax">Tax on Income</div>
+          </div>
+          <div class="p-3 rounded-2xl bg-white/5 border border-white/10 text-center">
+            <div class="font-cinzel text-xl sm:text-2xl font-black text-amber-300">8 - 10%</div>
+            <div class="text-[10px] text-slate-400 font-semibold uppercase mt-0.5" data-i18n="badge_roi">Rental Yields</div>
+          </div>
+          <div class="p-3 rounded-2xl bg-white/5 border border-white/10 text-center">
+            <div class="font-cinzel text-xl sm:text-2xl font-black text-amber-300">1%</div>
+            <div class="text-[10px] text-slate-400 font-semibold uppercase mt-0.5" data-i18n="badge_payment">Monthly Payment</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Lead Capture Form -->
+      <div id="leadFormContainer" class="lg:col-span-5">
+        <div class="luxury-card rounded-3xl p-6 sm:p-8 gold-border shadow-2xl relative">
+          
+          <div class="text-center mb-5">
+            <span class="font-cinzel text-xs text-amber-400 font-bold uppercase tracking-widest" data-i18n="form_tag">VIP Investment Advisory</span>
+            <h3 class="font-cinzel text-xl sm:text-2xl font-black text-white mt-1" data-i18n="form_title">Register For Exclusive Access</h3>
+            <p class="text-xs text-slate-400 mt-1" data-i18n="form_subtitle">Instant Floor Plans, Brochures & 2026 Inventory Release</p>
+          </div>
+
+          <form id="heroLeadForm" onsubmit="handleLeadSubmission(event)" class="space-y-3 text-xs">
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_name">Your Full Name *</label>
+              <input type="text" id="leadName" required placeholder="Subrata Mondal" class="w-full bg-black/60 border border-slate-700 rounded-xl px-3.5 py-2.5 text-white outline-none focus:border-amber-400 transition">
+            </div>
+
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_email">Email Address (for brochure & pricing) *</label>
+              <input type="email" id="leadEmail" required placeholder="name@example.com" class="w-full bg-black/60 border border-slate-700 rounded-xl px-3.5 py-2.5 text-white outline-none focus:border-amber-400 transition">
+            </div>
+
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_phone">Phone Number (with dial code) *</label>
+              <div class="grid grid-cols-12 gap-2">
+                <select id="leadDialCode" class="col-span-4 bg-slate-900 border border-slate-700 rounded-xl px-2 py-2.5 text-amber-300 outline-none text-xs">
+                  <option value="+48">🇵🇱 +48 (PL)</option>
+                  <option value="+49">🇩🇪 +49 (DE)</option>
+                  <option value="+44">🇬🇧 +44 (UK)</option>
+                  <option value="+33">🇫🇷 +33 (FR)</option>
+                  <option value="+39">🇮🇹 +39 (IT)</option>
+                  <option value="+971" selected>🇦🇪 +971 (AE)</option>
+                  <option value="+1">🇺🇸 +1 (US)</option>
+                  <option value="+91">🇮🇳 +91 (IN)</option>
+                </select>
+                <input type="tel" id="leadPhone" required placeholder="510 820 441" class="col-span-8 bg-black/60 border border-slate-700 rounded-xl px-3.5 py-2.5 text-white outline-none focus:border-amber-400 transition">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2">
+              <div>
+                <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_country">Your Location *</label>
+                <input type="text" id="leadCountry" required placeholder="Poland / Germany / India" class="w-full bg-black/60 border border-slate-700 rounded-xl px-3 py-2 text-white outline-none focus:border-amber-400">
+              </div>
+              <div>
+                <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_budget">Investment Budget *</label>
+                <select id="leadBudget" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-2.5 py-2 text-amber-300 outline-none">
+                  <option value="€200,000 - €400,000">€200k - €400k</option>
+                  <option value="€400,000 - €800,000" selected>€400k - €800k</option>
+                  <option value="€800,000 - €2,000,000">€800k - €2M (Golden Visa)</option>
+                  <option value="€2,000,000+">€2M+ (Penthouse)</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_project">Interested Project / Community</label>
+              <select id="leadProjectSelect" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-white outline-none">
+                <option value="DAMAC Lagoons · Morocco">DAMAC Lagoons · Mediterranean Waterfront Villas</option>
+                <option value="Safa Two · Sky Luxury">Safa Two · Sky Residences by Safa Park</option>
+                <option value="Bayz 101 · Business Bay">Bayz 101 · Burj Khalifa View Sky Suites</option>
+              </select>
+            </div>
+
+            <button type="submit" id="btnSubmitLead" class="w-full py-3.5 rounded-xl gold-btn text-xs font-black uppercase tracking-wider font-cinzel mt-2" data-i18n="btn_submit_lead">
+              Download Brochure & Pricing ↗
+            </button>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= LUXURY PROJECT SHOWCASE (LIVE SYNCED WITH ADMIN & GOOGLE SHEETS) ================= -->
+  <section class="py-20 px-6 max-w-7xl mx-auto" id="projects">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="font-cinzel text-xs font-bold text-amber-400 uppercase tracking-widest" data-i18n="sec_projects_tag">Curated Dubai Master Developments</span>
+      <h2 class="font-cinzel text-3xl sm:text-5xl font-black text-white mt-2" data-i18n="sec_projects_title">
+        FEATURED INVESTMENT PROJECTS
+      </h2>
+      <div class="w-20 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mt-4"></div>
+      <p class="text-xs sm:text-sm text-slate-400 mt-3" data-i18n="sec_projects_desc">
+        Direct from developer allocations with guaranteed rental programs and flexible milestone payment structures.
+      </p>
+    </div>
+
+    <!-- Dynamic Projects Grid (Rendered from JS & Google Sheet) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projectsGrid"></div>
+  </section>
+
+  <!-- ================= INVESTOR ROI & PAYMENT PLAN CALCULATOR ================= -->
+  <section class="py-16 px-6 bg-slate-950/60 border-y border-white/10">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-10">
+        <span class="font-cinzel text-xs font-bold text-amber-400 uppercase tracking-widest" data-i18n="calc_tag">Financial Engineering</span>
+        <h2 class="font-cinzel text-2xl sm:text-4xl font-black text-white mt-1" data-i18n="calc_title">DUBAI ROI & CAPITAL RETURN ESTIMATOR</h2>
+        <p class="text-xs text-slate-400 mt-1" data-i18n="calc_subtitle">Simulate your net returns comparing European taxation vs. Dubai's 0% Tax Environment</p>
+      </div>
+
+      <div class="luxury-card rounded-3xl p-8 gold-border grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-5 text-xs">
+          <div>
+            <label class="block text-slate-300 font-semibold mb-2">
+              <span data-i18n="calc_prop_val">Property Investment Value:</span> <span id="calcValLabel" class="text-amber-300 font-bold text-sm">€500,000</span>
+            </label>
+            <input type="range" id="propValSlider" min="250000" max="2500000" step="25000" value="500000" oninput="calculateROI()" class="w-full accent-amber-400 cursor-pointer">
+          </div>
+
+          <div>
+            <label class="block text-slate-300 font-semibold mb-2">
+              <span data-i18n="calc_yield">Expected Net Rental Yield:</span> <span id="calcYieldLabel" class="text-emerald-400 font-bold text-sm">8.5%</span>
+            </label>
+            <input type="range" id="yieldSlider" min="6.0" max="12.0" step="0.5" value="8.5" oninput="calculateROI()" class="w-full accent-emerald-400 cursor-pointer">
+          </div>
+
+          <div class="p-4 rounded-2xl bg-black/40 border border-white/10 space-y-2">
+            <div class="flex justify-between text-slate-300">
+              <span data-i18n="calc_eu_tax">Annual Tax in Europe (~35% avg):</span>
+              <span id="euTaxDeduction" class="text-rose-400 font-bold">-€14,875 / yr</span>
+            </div>
+            <div class="flex justify-between text-white font-bold border-t border-white/10 pt-2">
+              <span data-i18n="calc_uae_tax">Tax Paid in Dubai (UAE):</span>
+              <span class="text-emerald-400">€0.00 (Zero Tax)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculated Summary Box -->
+        <div class="bg-gradient-to-tr from-amber-950/40 via-slate-900 to-black p-6 rounded-2xl border border-amber-500/30 text-center space-y-4">
+          <span class="text-[10px] uppercase font-bold text-amber-400 tracking-widest font-cinzel" data-i18n="calc_net_income_tag">Projected Net Annual Return</span>
+          <div id="annualIncomeBox" class="font-cinzel text-4xl sm:text-5xl font-black text-white gold-gradient-text">
+            €42,500
+          </div>
+          <p class="text-slate-400 text-xs" data-i18n="calc_net_income_note">Tax-Free Passive Income Paid Directly in USD/EUR</p>
+
+          <div class="pt-4 border-t border-white/10 flex justify-between items-center text-xs">
+            <span class="text-slate-300" data-i18n="calc_cap_gain">5-Year Capital Gain (est. 35%):</span>
+            <span id="fiveYearGain" class="text-emerald-400 font-bold">+€175,000</span>
+          </div>
+
+          <button onclick="scrollToLeadForm()" class="w-full py-3 rounded-xl gold-btn text-xs font-bold uppercase tracking-wider font-cinzel mt-2" data-i18n="btn_claim_unit">
+            Claim Guaranteed Unit Allocation ↗
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ADMIN PANEL MODAL (PIN: 5047 TO ADD PROPERTIES & PHOTOS) ================= -->
+  <div id="adminModal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-xl hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="luxury-card gold-border rounded-3xl max-w-2xl w-full p-6 sm:p-8 relative my-8">
+      <button onclick="closeModal('adminModal')" class="absolute top-5 right-5 text-slate-400 hover:text-white text-lg">✕</button>
+
+      <!-- Step 1: Admin PIN Verification -->
+      <div id="adminAuthSection">
+        <h3 class="font-cinzel text-xl font-bold text-amber-400 mb-2">Master Real Estate Admin Key</h3>
+        <p class="text-xs text-slate-400 mb-4">Enter security passcode (5047) to manage and upload properties with custom photos.</p>
+        <input type="password" id="adminPin" maxlength="4" placeholder="••••" class="w-full text-center tracking-widest text-2xl bg-black/60 border border-slate-700 rounded-xl p-3 text-amber-300 mb-4 outline-none font-mono">
+        <button onclick="verifyAdminPin()" class="w-full py-3 rounded-xl gold-btn font-cinzel text-xs font-bold uppercase">Unlock Admin Console</button>
+      </div>
+
+      <!-- Step 2: Add New Property with Photo Form -->
+      <div id="adminActionSection" class="hidden space-y-4">
+        <div class="border-b border-white/10 pb-3 flex justify-between items-center">
+          <div>
+            <h3 class="font-cinzel text-lg font-bold text-white">Add New Property to Inventory</h3>
+            <p class="text-[11px] text-slate-400">Syncs directly into Google Sheets and instantly appears on this website.</p>
+          </div>
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/30">PIN 5047 Verified</span>
+        </div>
+
+        <form onsubmit="handleAdminAddProperty(event)" class="space-y-3 text-xs">
+          <div>
+            <label class="block text-slate-300 font-semibold mb-1">Property Name *</label>
+            <input type="text" id="admPropName" required placeholder="e.g. Cavalli Tower Luxury Suites" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400">
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1">Location / Tag *</label>
+              <input type="text" id="admLocation" required placeholder="e.g. Dubai Marina / Beachfront" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400">
+            </div>
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1">Starting Price in AED *</label>
+              <input type="number" id="admPriceAed" required placeholder="e.g. 2100000" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-amber-300 outline-none focus:border-amber-400">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1">Expected ROI / Yield *</label>
+              <input type="text" id="admRoi" required placeholder="e.g. 9.8% Net Yield" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400">
+            </div>
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1">Handover Year *</label>
+              <input type="text" id="admHandover" required placeholder="e.g. Q4 2027" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400">
+            </div>
+          </div>
+
+          <!-- Cover Image Photo URL -->
+          <div>
+            <label class="block text-slate-300 font-semibold mb-1">Primary Real Photo / Screenshot URL *</label>
+            <input type="url" id="admCoverImage" required placeholder="https://images.unsplash.com/... or Google Drive direct image link" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400">
+          </div>
+
+          <div>
+            <label class="block text-slate-300 font-semibold mb-1">Property Description</label>
+            <textarea id="admDesc" rows="2" placeholder="Brief summary of views, private pool, or luxury finishes..." class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400 resize-none"></textarea>
+          </div>
+
+          <button type="submit" id="btnAdminPublish" class="w-full py-3 rounded-xl gold-btn font-cinzel font-bold text-xs uppercase tracking-wider mt-2">
+            Publish Property To Live Website ↗
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= POPUP MODAL FOR BROCHURE / FLOOR PLANS ================= -->
+  <div id="inquiryModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-xl hidden items-center justify-center p-4">
+    <div class="luxury-card gold-border rounded-3xl max-w-md w-full p-6 relative">
+      <button onclick="closeModal('inquiryModal')" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">✕</button>
+
+      <div class="text-center mb-5">
+        <span class="font-cinzel text-[10px] text-amber-400 uppercase tracking-widest" data-i18n="modal_pack_tag">Confidential Information Pack</span>
+        <h3 id="modalProjectTitle" class="font-cinzel text-lg font-bold text-white mt-1">Project Floor Plans & Pricing</h3>
+      </div>
+
+      <form onsubmit="handleModalSubmit(event)" class="space-y-3 text-xs">
+        <div>
+          <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_name">Your Full Name *</label>
+          <input type="text" id="mLeadName" required placeholder="Subrata Mondal" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400">
+        </div>
+        <div>
+          <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_email">Email Address *</label>
+          <input type="email" id="mLeadEmail" required placeholder="name@example.com" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400">
+        </div>
+        <div>
+          <label class="block text-slate-300 font-semibold mb-1" data-i18n="label_phone">WhatsApp / Phone with Dial Code *</label>
+          <input type="tel" id="mLeadPhone" required placeholder="+48 510 820 441" class="w-full bg-black/60 border border-slate-700 rounded-xl p-2.5 text-white outline-none focus:border-amber-400">
+        </div>
+        <button type="submit" id="btnModalSubmit" class="w-full py-3 rounded-xl gold-btn font-cinzel font-bold text-xs uppercase tracking-wider mt-2" data-i18n="btn_send_plans">
+          Send Floor Plans via WhatsApp / Email ↗
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= FLOATING STICKY VIP CONNECT ================= -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3">
+    <a href="https://wa.me/48510820441?text=Hello,%20please%20send%20me%20the%20Dubai%20Real%20Estate%20Brochure%20and%20payment%20plans." target="_blank" class="flex items-center gap-2 pl-3.5 pr-4 py-2.5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 border border-emerald-400/50 text-white shadow-2xl transition hover:scale-105">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+      <div class="text-left">
+        <span class="block text-[9px] uppercase tracking-wider text-emerald-200 font-bold">Direct Channel</span>
+        <span class="text-xs font-bold font-cinzel">VIP WhatsApp</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-white/10 bg-black py-10 px-6 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <div>
+        <p class="font-cinzel text-slate-300 text-sm font-bold tracking-wider">BERIGHT PROPERTIES · DUBAI</p>
+        <p class="text-[11px] text-slate-500 mt-1">Authorized Representative for Premier Dubai Master Developers.</p>
+      </div>
+      <div class="flex items-center gap-4 text-slate-400 text-[11px]">
+        <span>Licensed by RERA & Dubai Land Department Guidelines.</span>
+        <button onclick="openAdminModal()" class="text-slate-400 hover:text-amber-400 transition ml-2">
+          <i class="fa-solid fa-lock"></i> Admin Portal
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= JAVASCRIPT CONTROLLER (MULTILINGUAL + ADMIN + CURRENCY) ================= -->
+  <script>
+    // -------------------------------------------------------------
+    // [ PASTE YOUR APPS SCRIPT DEPLOYED WEB APP URL HERE ]
+    // -------------------------------------------------------------
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby4_WDmLeJCE4Wo3UMXdaZEjAHc_0E0LR3Ya1KfNl-UWGsSY-RoEOwaKQzYKHTGTS97tw/exec";
+    // -------------------------------------------------------------
+
+    // 1. TRI-LINGUAL DICTIONARY (ENGLISH DEFAULT, BENGALI, HINDI)
+    const translations = {
+      en: {
+        top_visa: '<i class="fa-solid fa-passport"></i> 10-Year UAE Golden Visa Eligible',
+        top_tax: '<i class="fa-solid fa-percent text-amber-400"></i> 0% Property & Rental Income Tax',
+        brand_subtitle: 'Dubai Premier Residences',
+        nav_whatsapp: 'WhatsApp Advisor',
+        nav_register: 'Register Interest',
+        hero_badge: 'Exclusive European Investor Release · 2026',
+        hero_title_1: 'OWN LUXURY PROPERTY IN',
+        hero_title_2: 'DUBAI FROM EUROPE',
+        hero_desc: 'High-yielding beachfront apartments, crystal lagoon villas, and architectural marvels. Enjoy 10-year residency Golden Visas, zero personal tax, and direct master developer pricing with flexible post-handover payment plans.',
+        badge_tax: 'Tax on Income',
+        badge_roi: 'Rental Yields',
+        badge_payment: 'Monthly Payment',
+        form_tag: 'VIP Investment Advisory',
+        form_title: 'Register For Exclusive Access',
+        form_subtitle: 'Instant Floor Plans, Brochures & 2026 Inventory Release',
+        label_name: 'Your Full Name *',
+        label_email: 'Email Address (for brochure & pricing) *',
+        label_phone: 'Phone Number (with dial code) *',
+        label_country: 'Your Location *',
+        label_budget: 'Investment Budget *',
+        label_project: 'Interested Project / Community',
+        btn_submit_lead: 'Download Brochure & Pricing ↗',
+        sec_projects_tag: 'Curated Dubai Master Developments',
+        sec_projects_title: 'FEATURED INVESTMENT PROJECTS',
+        sec_projects_desc: 'Direct from developer allocations with guaranteed rental programs and flexible milestone payment structures.',
+        calc_tag: 'Financial Engineering',
+        calc_title: 'DUBAI ROI & CAPITAL RETURN ESTIMATOR',
+        calc_subtitle: 'Simulate your net returns comparing European taxation vs. Dubai\'s 0% Tax Environment',
+        calc_prop_val: 'Property Investment Value:',
+        calc_yield: 'Expected Net Rental Yield:',
+        calc_eu_tax: 'Annual Tax in Europe (~35% avg):',
+        calc_uae_tax: 'Tax Paid in Dubai (UAE):',
+        calc_net_income_tag: 'Projected Net Annual Return',
+        calc_net_income_note: 'Tax-Free Passive Income Paid Directly in USD/EUR',
+        calc_cap_gain: '5-Year Capital Gain (est. 35%):',
+        btn_claim_unit: 'Claim Guaranteed Unit Allocation ↗',
+        modal_pack_tag: 'Confidential Information Pack',
+        btn_send_plans: 'Send Floor Plans via WhatsApp / Email ↗',
+        btn_req_plans: 'Request Floor Plans & Price Sheet',
+        lbl_starting_price: 'Starting Price',
+        lbl_projected_roi: 'Projected ROI'
+      },
+      bn: {
+        top_visa: '<i class="fa-solid fa-passport"></i> ১০ বছরের ইউএই গোল্ডেন ভিসা পাওয়ার সুযোগ',
+        top_tax: '<i class="fa-solid fa-percent text-amber-400"></i> প্রপার্টি ও ভাড়ার আয়ে ০% ট্যাক্স',
+        brand_subtitle: 'দুবাই প্রিমিয়ার রেসিডেন্সেস',
+        nav_whatsapp: 'হোয়াটসঅ্যাপে কথা বলুন',
+        nav_register: 'আগ্রহ প্রকাশ করুন',
+        hero_badge: 'ইউরোপীয় ও আন্তর্জাতিক বিনিয়োগকারীদের জন্য বিশেষ অফার · ২০২৬',
+        hero_title_1: 'দুবাইয়ের বিলাসবহুল প্রপার্টির মালিক হোন',
+        hero_title_2: 'সরাসরি ইউরোপ ও বিদেশ থেকে',
+        hero_desc: 'বিচফ্রন্ট অ্যাপার্টমেন্ট, ক্রিস্টাল লেগুন ভিলা এবং নান্দনিক স্কাইস্ক্র্যাপার। ১০ বছরের গোল্ডেন ভিসা, সম্পূর্ণ ট্যাক্স-মুক্ত আয় এবং সহজ মাসিক কিস্তিতে সরাসরি মাস্টার ডেভেলপারের মূল্যে বুকিং করুন।',
+        badge_tax: 'আয়ের ওপর শূন্য ট্যাক্স',
+        badge_roi: 'বার্ষিক ভাড়া লাভ',
+        badge_payment: 'সহজ মাসিক কিস্তি',
+        form_tag: 'ভিআইপি ইনভেস্টমেন্ট অ্যাডভাইজরি',
+        form_title: 'ব্রোশিওর ও এক্সক্লুসিভ অফারের জন্য রেজিস্টার করুন',
+        form_subtitle: 'ইনস্ট্যান্ট ফ্লোর প্ল্যান, প্রাইস লিস্ট এবং ২০২৬ এর নতুন ইনভেন্টরি',
+        label_name: 'আপনার পুরো নাম *',
+        label_email: 'ইমেইল অ্যাড্রেস (ব্রোশিওর পাওয়ার জন্য) *',
+        label_phone: 'মোবাইল নম্বর (ডায়াল কোড সহ) *',
+        label_country: 'আপনার বর্তমান দেশ / লোকেশন *',
+        label_budget: 'বিনিয়োগের বাজেট *',
+        label_project: 'পছন্দের প্রজেক্ট বা এরিয়া',
+        btn_submit_lead: 'ব্রোশিওর ও প্রজেক্ট রেট ডাউনলোড করুন ↗',
+        sec_projects_tag: 'দুবাইয়ের সেরা মাস্টার প্রজেক্টসমূহ',
+        sec_projects_title: 'নির্বাচিত আকর্ষণীয় প্রপার্টিসমূহ',
+        sec_projects_desc: 'সরাসরি ডেভেলপার থেকে প্রজেক্ট বুকিং, নিশ্চিত ভাড়া লাভ এবং সহজ পেমেন্ট প্ল্যান সুবিধা।',
+        calc_tag: 'লাভের হিসাব ও বিশ্লেষণ',
+        calc_title: 'দুবাই আরওআই (ROI) ও রিটার্ন ক্যালকুলেটর',
+        calc_subtitle: 'ইউরোপের ৩৫% ট্যাক্সের বিপরীতে দুবাইয়ের ০% ট্যাক্স সুবিধায় আপনার নিট লাভের হিসাব দেখুন',
+        calc_prop_val: 'প্রপার্টির মোট মূল্য:',
+        calc_yield: 'সম্ভাব্য বার্ষিক ভাড়ার লাভ:',
+        calc_eu_tax: 'ইউরোপে বার্ষিক ট্যাক্স কর্তন (~৩৫%):',
+        calc_uae_tax: 'দুবাইয়ে (UAE) ট্যাক্স কর্তন:',
+        calc_net_income_tag: 'সম্ভাব্য নিট বার্ষিক আয়',
+        calc_net_income_note: 'সম্পূর্ণ ট্যাক্স-মুক্ত প্যাসিভ ইনকাম সরাসরি USD/EUR এ পাবেন',
+        calc_cap_gain: '৫ বছরে ক্যাপিটাল বৃদ্ধি (আনুমানিক ৩৫%):',
+        btn_claim_unit: 'আপনার পছন্দের ইউনিট বুক করুন ↗',
+        modal_pack_tag: 'গোপনীয় ইনফরমেশন প্যাক',
+        btn_send_plans: 'ফ্লোর প্ল্যান হোয়াটসঅ্যাপ বা ইমেইলে পাঠান ↗',
+        btn_req_plans: 'ফ্লোর প্ল্যান ও প্রাইস লিস্টের অনুরোধ করুন',
+        lbl_starting_price: 'শুরুর মূল্য',
+        lbl_projected_roi: 'সম্ভাব্য বার্ষিক লাভ'
+      },
+      hi: {
+        top_visa: '<i class="fa-solid fa-passport"></i> 10-साल का यूएई गोल्डन वीज़ा योग्य',
+        top_tax: '<i class="fa-solid fa-percent text-amber-400"></i> प्रॉपर्टी और किराये की आय पर 0% टैक्स',
+        brand_subtitle: 'दुबई प्रीमियर रेजिडेंस',
+        nav_whatsapp: 'व्हाट्सएप सलाहकार',
+        nav_register: 'रुचि दर्ज करें',
+        hero_badge: 'यूरोपीय और अंतरराष्ट्रीय निवेशकों के लिए विशेष रिलीज · 2026',
+        hero_title_1: 'दुबई में लग्जरी प्रॉपर्टी के मालिक बनें',
+        hero_title_2: 'यूरोप और विदेश से सीधे',
+        hero_desc: 'बीचफ्रंट अपार्टमेंट, क्रिस्टल लैगून विला और आधुनिक गगनचुंबी इमारतें। 10 साल का गोल्डन वीज़ा, शून्य टैक्स और आसान किस्तों पर सीधे मास्टर डेवलपर से बुक करें।',
+        badge_tax: 'आय पर शून्य टैक्स',
+        badge_roi: 'वार्षिक किराया लाभ',
+        badge_payment: 'आसान मासिक किस्त',
+        form_tag: 'वीआईपी निवेश परामर्श',
+        form_title: 'एक्सक्लूसिव एक्सेस के लिए रजिस्टर करें',
+        form_subtitle: 'तुरंत फ्लोर प्लान, ब्रोशर और 2026 की नई इन्वेंट्री प्राप्त करें',
+        label_name: 'आपका पूरा नाम *',
+        label_email: 'ईमेल पता (ब्रोशर और कीमतों के लिए) *',
+        label_phone: 'फ़ोन नंबर (डायल कोड सहित) *',
+        label_country: 'आपका वर्तमान स्थान / देश *',
+        label_budget: 'निवेश बजट *',
+        label_project: 'पसंदीदा प्रोजेक्ट / कम्युनिटी',
+        btn_submit_lead: 'ब्रोशर और मूल्य सूची डाउनलोड करें ↗',
+        sec_projects_tag: 'दुबई के सर्वश्रेष्ठ मास्टर प्रोजेक्ट्स',
+        sec_projects_title: 'प्रमुख निवेश संपत्तियां',
+        sec_projects_desc: 'सीधे डेवलपर से आवंटन, गारंटीकृत किराया लाभ और लचीली भुगतान योजनाएं।',
+        calc_tag: 'वित्तीय लाभ अनुमान',
+        calc_title: 'दुबई आरओआई (ROI) और लाभ कैलकुलेटर',
+        calc_subtitle: 'यूरोपीय टैक्स (35%) की तुलना में दुबई के 0% टैक्स में अपनी शुद्ध आय देखें',
+        calc_prop_val: 'प्रॉपर्टी निवेश मूल्य:',
+        calc_yield: 'अपेक्षित शुद्ध किराया लाभ:',
+        calc_eu_tax: 'यूरोप में वार्षिक टैक्स (~35%):',
+        calc_uae_tax: 'दुबई में टैक्स (UAE):',
+        calc_net_income_tag: 'अनुमानित शुद्ध वार्षिक आय',
+        calc_net_income_note: 'टैक्स-मुक्त आय सीधे USD/EUR में प्राप्त करें',
+        calc_cap_gain: '5 वर्षों में मूल्य वृद्धि (अनुमानित 35%):',
+        btn_claim_unit: 'गारंटीकृत यूनिट सुरक्षित करें ↗',
+        modal_pack_tag: 'गोपनीय जानकारी पैक',
+        btn_send_plans: 'व्हाट्सएप / ईमेल पर फ्लोर प्लान भेजें ↗',
+        btn_req_plans: 'फ्लोर प्लान और मूल्य सूची का अनुरोध करें',
+        lbl_starting_price: 'शुरुआती कीमत',
+        lbl_projected_roi: 'अनुमानित किराया लाभ'
+      }
+    };
+
+    let currentLang = "en";
+    let currentCurrency = "EUR";
+
+    const exchangeRates = {
+      AED: 1,
+      EUR: 0.25,
+      USD: 0.27,
+      PLN: 1.08
+    };
+
+    // Starter Default Projects
+    let liveProjects = [
+      {
+        "Project Name": "DAMAC Lagoons · Morocco",
+        "Location/Tag": "Waterfront Community",
+        "Description": "Mediterranean-inspired luxury villas surrounded by crystal-clear swimmable lagoons.",
+        "Starting Price AED": 2200000,
+        "Expected ROI": "9.4% Net Yield",
+        "Handover": "Q4 2026",
+        "Cover Image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "Project Name": "Safa Two · Sky Luxury",
+        "Location/Tag": "De Grisogono Branded",
+        "Description": "High-altitude luxury residences branded by Swiss jeweler De Grisogono with fog forest.",
+        "Starting Price AED": 1600000,
+        "Expected ROI": "10-Yr Golden Visa",
+        "Handover": "Q2 2027",
+        "Cover Image": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "Project Name": "Bayz 101 · Business Bay",
+        "Location/Tag": "Burj Khalifa View",
+        "Description": "101-level skyscraper directly in Downtown Business Bay with private infinity plunge pools.",
+        "Starting Price AED": 1400000,
+        "Expected ROI": "1% Monthly Plan",
+        "Handover": "Q1 2028",
+        "Cover Image": "https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&fit=crop&w=1000&q=80"
+      }
+    ];
+
+    // Language Setter Function
+    function setLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem('dubai_lang', lang);
+
+      ["en", "bn", "hi"].forEach(l => {
+        const btn = document.getElementById(`lang-${l}`);
+        if (l === lang) {
+          btn.className = "px-2.5 py-0.5 rounded bg-amber-400 text-slate-950 transition font-bold";
+        } else {
+          btn.className = "px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition font-normal";
+        }
+      });
+
+      // Apply body fonts
+      document.body.classList.remove('lang-bn', 'lang-hi');
+      if (lang === 'bn') document.body.classList.add('lang-bn');
+      if (lang === 'hi') document.body.classList.add('lang-hi');
+
+      // Update text using data-i18n
+      const dict = translations[lang] || translations.en;
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key]) el.innerHTML = dict[key];
+      });
+
+      renderProjectsGrid();
+    }
+
+    // Currency Setter Function
+    function setCurrency(curr) {
+      currentCurrency = curr;
+      ["EUR", "USD", "AED", "PLN"].forEach(c => {
+        const btn = document.getElementById(`curr-${c}`);
+        if (c === curr) {
+          btn.className = "px-2.5 py-0.5 rounded bg-amber-400 text-slate-950 transition font-bold";
+        } else {
+          btn.className = "px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition font-normal";
+        }
+      });
+
+      renderProjectsGrid();
+      calculateROI();
+    }
+
+    // Format Prices Dynamically
+    function formatPrice(aedAmount) {
+      const rate = exchangeRates[currentCurrency] || 0.25;
+      const converted = Math.round(aedAmount * rate);
+
+      let symbol = "€";
+      if (currentCurrency === "USD") symbol = "$";
+      if (currentCurrency === "AED") symbol = "AED ";
+      if (currentCurrency === "PLN") symbol = "zł ";
+
+      return `${symbol}${converted.toLocaleString()}`;
+    }
+
+    // Render Projects into DOM
+    function renderProjectsGrid() {
+      const grid = document.getElementById("projectsGrid");
+      grid.innerHTML = "";
+
+      const dict = translations[currentLang] || translations.en;
+
+      liveProjects.forEach(item => {
+        const name = item["Project Name"] || "Luxury Dubai Property";
+        const tag = item["Location/Tag"] || "Prime Dubai";
+        const desc = item["Description"] || "Ultra-luxury modern residence with panoramic views.";
+        const priceAed = Number(item["Starting Price AED"]) || 1500000;
+        const roi = item["Expected ROI"] || "9% Net Yield";
+        const handover = item["Handover"] || "Q4 2027";
+        const cover = item["Cover Image"] || "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1000&q=80";
+
+        const card = document.createElement("div");
+        card.className = "luxury-card rounded-3xl overflow-hidden flex flex-col justify-between";
+        card.innerHTML = `
+          <div>
+            <div class="relative h-64 overflow-hidden">
+              <img src="${cover}" alt="${name}" class="w-full h-full object-cover transition duration-700 hover:scale-105" loading="lazy">
+              <span class="absolute top-4 left-4 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-black/80 backdrop-blur-md text-amber-300 border border-amber-400/40 font-cinzel">
+                ${tag}
+              </span>
+              <div class="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-black/85 text-[10px] font-semibold text-slate-200">
+                Handover: ${handover}
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-cinzel text-xl font-bold text-white">${name}</h3>
+              <p class="text-xs text-slate-400 mt-1">${desc}</p>
+              
+              <div class="grid grid-cols-2 gap-2 my-4 pt-3 border-t border-white/10 text-xs">
+                <div>
+                  <span class="text-[10px] text-slate-500 uppercase block font-semibold">${dict.lbl_starting_price}</span>
+                  <span class="font-bold text-amber-300 text-sm">${formatPrice(priceAed)}</span>
+                </div>
+                <div>
+                  <span class="text-[10px] text-slate-500 uppercase block font-semibold">${dict.lbl_projected_roi}</span>
+                  <span class="font-bold text-emerald-400 text-sm">${roi}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <button onclick="openInquiryModal('${name.replace(/'/g, "\\'")}')" class="w-full py-3 rounded-xl bg-white/10 hover:bg-amber-400 hover:text-black border border-white/15 text-white font-bold text-xs uppercase tracking-wider transition font-cinzel">
+              ${dict.btn_req_plans}
+            </button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // Fetch Live Projects from Google Sheets
+    async function fetchInventoryFromSheets() {
+      if (!SCRIPT_URL || SCRIPT_URL === "YOUR_DEPLOYED_WEB_APP_URL") {
+        renderProjectsGrid();
+        return;
+      }
+      try {
+        const res = await fetch(SCRIPT_URL);
+        const data = await res.json();
+        if (data.status === "success" && data.projects && data.projects.length > 0) {
+          liveProjects = data.projects;
+          renderProjectsGrid();
+        }
+      } catch (e) {
+        renderProjectsGrid();
+      }
+    }
+
+    // Calculator Logic
+    function calculateROI() {
+      const propVal = parseFloat(document.getElementById("propValSlider").value);
+      const yieldRate = parseFloat(document.getElementById("yieldSlider").value);
+
+      document.getElementById("calcValLabel").innerText = `€${propVal.toLocaleString()}`;
+      document.getElementById("calcYieldLabel").innerText = `${yieldRate.toFixed(1)}%`;
+
+      const annualIncome = Math.round(propVal * (yieldRate / 100));
+      const euTax = Math.round(annualIncome * 0.35);
+      const fiveYearCapGain = Math.round(propVal * 0.35);
+
+      document.getElementById("annualIncomeBox").innerText = `€${annualIncome.toLocaleString()}`;
+      document.getElementById("euTaxDeduction").innerText = `-€${euTax.toLocaleString()} / yr`;
+      document.getElementById("fiveYearGain").innerText = `+€${fiveYearCapGain.toLocaleString()}`;
+    }
+
+    function scrollToLeadForm() {
+      document.getElementById("leadFormContainer").scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Admin Panel (PIN 5047) Functions
+    function openAdminModal() {
+      document.getElementById("adminPin").value = "";
+      document.getElementById("adminAuthSection").classList.remove("hidden");
+      document.getElementById("adminActionSection").classList.add("hidden");
+      document.getElementById("adminModal").classList.remove("hidden");
+      document.getElementById("adminModal").classList.add("flex");
+    }
+
+    function verifyAdminPin() {
+      const pin = document.getElementById("adminPin").value.trim();
+      if (pin === "5047") {
+        document.getElementById("adminAuthSection").classList.add("hidden");
+        document.getElementById("adminActionSection").classList.remove("hidden");
+      } else {
+        alert("Invalid Admin Key! Access denied.");
+      }
+    }
+
+    async function handleAdminAddProperty(e) {
+      e.preventDefault();
+      const btn = document.getElementById("btnAdminPublish");
+      btn.disabled = true;
+      btn.innerText = "Publishing to Google Sheet...";
+
+      const newProp = {
+        action: "add_property",
+        projectName: document.getElementById("admPropName").value,
+        location: document.getElementById("admLocation").value,
+        priceAed: document.getElementById("admPriceAed").value,
+        roi: document.getElementById("admRoi").value,
+        handover: document.getElementById("admHandover").value,
+        coverImage: document.getElementById("admCoverImage").value,
+        description: document.getElementById("admDesc").value
+      };
+
+      try {
+        if (SCRIPT_URL && SCRIPT_URL !== "YOUR_DEPLOYED_WEB_APP_URL") {
+          await fetch(SCRIPT_URL, {
+            method: "POST",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(newProp)
+          });
+        }
+        
+        // Push locally for instant display
+        liveProjects.unshift({
+          "Project Name": newProp.projectName,
+          "Location/Tag": newProp.location,
+          "Description": newProp.description,
+          "Starting Price AED": Number(newProp.priceAed),
+          "Expected ROI": newProp.roi,
+          "Handover": newProp.handover,
+          "Cover Image": newProp.coverImage
+        });
+
+        renderProjectsGrid();
+        alert("New Property published successfully with custom photo!");
+        closeModal("adminModal");
+        e.target.reset();
+      } catch (err) {
+        alert("Published locally!");
+        closeModal("adminModal");
+      } finally {
+        btn.disabled = false;
+        btn.innerText = "Publish Property To Live Website ↗";
+      }
+    }
+
+    // Inquiry Modal
+    function openInquiryModal(projectName) {
+      document.getElementById("modalProjectTitle").innerText = projectName;
+      document.getElementById("inquiryModal").classList.remove("hidden");
+      document.getElementById("inquiryModal").classList.add("flex");
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.add("hidden");
+      document.getElementById(id).classList.remove("flex");
+    }
+
+    // Lead Form Submissions
+    async function handleLeadSubmission(e) {
+      e.preventDefault();
+      const btn = document.getElementById("btnSubmitLead");
+      btn.disabled = true;
+      btn.innerText = "Transmitting Credentials...";
+
+      const payload = {
+        fullName: document.getElementById("leadName").value,
+        email: document.getElementById("leadEmail").value,
+        dialCode: document.getElementById("leadDialCode").value,
+        phone: document.getElementById("leadPhone").value,
+        currency: currentCurrency,
+        budget: document.getElementById("leadBudget").value,
+        projectName: document.getElementById("leadProjectSelect").value,
+        investorCountry: document.getElementById("leadCountry").value,
+        propertyType: "Luxury Suite / Villa"
+      };
+
+      try {
+        if (SCRIPT_URL && SCRIPT_URL !== "YOUR_DEPLOYED_WEB_APP_URL") {
+          await fetch(SCRIPT_URL, {
+            method: "POST",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(payload)
+          });
+        }
+        alert("Thank you! Your VIP inquiry has been registered. The brochure and pricing sheet have been sent.");
+        e.target.reset();
+      } catch (err) {
+        alert("Inquiry registered! Our advisor will contact you shortly.");
+      } finally {
+        btn.disabled = false;
+        btn.innerText = translations[currentLang].btn_submit_lead;
+      }
+    }
+
+    async function handleModalSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById("btnModalSubmit");
+      btn.disabled = true;
+      btn.innerText = "Sending...";
+
+      const payload = {
+        fullName: document.getElementById("mLeadName").value,
+        email: document.getElementById("mLeadEmail").value,
+        dialCode: "",
+        phone: document.getElementById("mLeadPhone").value,
+        currency: currentCurrency,
+        budget: "€400k - €800k",
+        projectName: document.getElementById("modalProjectTitle").innerText,
+        investorCountry: "International",
+        propertyType: "Floor Plan Request"
+      };
+
+      try {
+        if (SCRIPT_URL && SCRIPT_URL !== "YOUR_DEPLOYED_WEB_APP_URL") {
+          await fetch(SCRIPT_URL, {
+            method: "POST",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(payload)
+          });
+        }
+        alert("Floor plans sent to your contact details!");
+        closeModal("inquiryModal");
+        e.target.reset();
+      } catch (err) {
+        closeModal("inquiryModal");
+      } finally {
+        btn.disabled = false;
+        btn.innerText = translations[currentLang].btn_send_plans;
+      }
+    }
+
+    // Startup Initialization (English default)
+    window.addEventListener("DOMContentLoaded", () => {
+      const savedLang = localStorage.getItem('dubai_lang') || 'en';
+      setLanguage(savedLang);
+      calculateROI();
+      fetchInventoryFromSheets();
+    });
+  </script>
+</body>
+</html>
